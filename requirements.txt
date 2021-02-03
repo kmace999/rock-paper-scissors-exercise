@@ -1,0 +1,4 @@
+#these are the requirements for the rock, paper, scissors game
+
+python-dotenv
+# https://github.com/theskumar/python-dotenv

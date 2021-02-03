@@ -25,7 +25,9 @@ def rpsgame():
         if userplay=='rock' or userplay=='paper' or userplay== 'scissors':
             terminology=False
         elif userplay!='rock' or userplay!='paper' or userplay!= 'scissors':
-            print("Please enter either 'rock', 'paper', or 'scissors.'")
+            print()
+            print("Please enter either 'rock', 'paper', or 'scissors'.")
+            print()
 
     print("Rock, Paper, Scissors, Shoot!")
     print("You chose:", userplay)
