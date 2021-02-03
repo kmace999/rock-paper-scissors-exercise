@@ -1,10 +1,17 @@
 #game.py
 #rock, paper, scissors game
 
-import time
+import os
 import random
 
-username = 'Player One'
+from dotenv import load_dotenv
+#https://github.com/theskumar/python-dotenv
+
+load_dotenv()
+
+USER_NAME = os.getenv("USER_NAME", default="Player One")
+
+
 terminology = True
 
 
@@ -17,7 +24,7 @@ def rpsgame():
     terminology = True
 
     print("-------------------")
-    print("Welcome",username,"to my Rock-Paper-Scissors game...")
+    print("Welcome",USER_NAME,"to my Rock-Paper-Scissors game...")
     print("-------------------")
 
     while terminology:
