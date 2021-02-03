@@ -5,25 +5,33 @@ import time
 import random
 
 username = 'Player One'
+terminology = True
 
 
 #fetch new username from .env?
 
+
+
+
 def rpsgame():
-    delay = 3
+    terminology = True
+
     print("-------------------")
     print("Welcome",username,"to my Rock-Paper-Scissors game...")
     print("-------------------")
-    computerChoice =random.choice(['rock','paper','scissors'])
-
-    terminology = True
 
     while terminology:
         userplay = input("Please choose either 'rock', 'paper', or 'scissors':")
         if userplay=='rock' or userplay=='paper' or userplay== 'scissors':
             terminology=False
+        elif userplay!='rock' or userplay!='paper' or userplay!= 'scissors':
+            print("Please enter either 'rock', 'paper', or 'scissors.'")
 
+    print("Rock, Paper, Scissors, Shoot!")
+    print("You chose:", userplay)
 
+    computerChoice =random.choice(['rock','paper','scissors'])
+    print("The computer chose:",computerChoice)
     if computerChoice==userplay:
         result = "It's a tie!"
     elif computerChoice=='rock':
@@ -43,11 +51,6 @@ def rpsgame():
             result = "Oh, the computer won. It's ok. Try again!"
 
 
-
-    print("Rock, Paper, Scissors, Shoot!")
-    print("You chose:", userplay)
-    time.sleep(delay)
-    print("The computer chose: ",computerChoice)
     print("-------------------")
     print(result)
     print("-------------------")
