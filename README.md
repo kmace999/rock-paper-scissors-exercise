@@ -23,12 +23,13 @@ need to do this the first time you setup this environment.)
 `pip install -r requirements.txt`
 
 
-##Playing Rock, Paper, Scissors
+## Playing Rock, Paper, Scissors
 To play the game, run the below code, and follow the in-game instructions. Have fun!
+
 `python game.py`
 
 
-##Customizing your username
+## Customizing your username
 Create a new file called ".env"
 
 `> .env`
@@ -46,7 +47,7 @@ and enter your chosen username.
 `USER_NAME = "Remy Ratatouille"`
 
 
-#Files included
+# Files included
 - README.md
 - requirements.txt
 - game.py
