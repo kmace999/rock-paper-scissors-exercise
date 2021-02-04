@@ -1,32 +1,38 @@
 # rock-paper-scissors-exercise
+Navigate to the rock-paper-scissors-exercise repository from your local Git Hub
+Desktop client in the command line [ex: Git Bash, Command Prompt, etc.]. The below code
+is an example, so make sure it reflects your depository's unique address.
+`cd ~/Documents/GitHub/rock-paper-scissors-exercise`
 
-#MAKE THIS WHOLE THING LOOK NICE WITH THE RIGHT TEXT FILE CODE
+## Setting up the game environment
+The first time you play this game (and only the first time), you need to create
+a new environment, and name it something like "my-game-env".
+`conda create -n my-game-env python=3.8`
+This code will also install Python 3.8 into this new environment.
+To navigate to this environment or return to it in the future, use the below code.
+`conda activate my-game-env`
 
-#how to set up the game environment
-# run this code in your command line [e.g. Git Bash] software to set up the game's
-# environment the first time you play
+When activating the environment for the first time, you have to install the
+required packages listed in the requirements.txt file in the repository. (You only
+need to do this the first time you setup this environment.)
+`pip install -r requirements.txt`
 
-#navigate to the address of the repository in your command line
-####"cd ~Documents/" #complete this and make this your actual address
+##Playing Rock, Paper, Scissors
+To play the game, run the below code, and follow the in-game instructions. Have fun!
+`python game.py`
 
-######pip install -r requirements.txt
+##Customizing your username
+Create a new file called ".env"
+`> .env`
+The required package for this game python-dotenv allows the user to
+enter a secret username that is displayed in the game but not visible when
+looking through the root depository.
+To change your username, open the new .env file in your text editor (example below),
+`atom .env`
+and enter your chosen username.
+`USER_NAME = "Remy Ratatouille"`
 
-#do this the first time only
-######"conda create -n my-game-env python=3.8"
-
-#do this activate the new environment
-#or to get back to the previously created environment
-######"conda activate my-game-env"
-
-#to edit your USER_NAME
-#- navigate to the root directory of the local rock-paper-scissors-exercise repository
-#- create a new file called ".env"
-#EXAMPLE CODE
-
-#- redefine the variable USER_NAME to reflect your chosen name
-
-#EXAMPLE CODE
-#####USER_NAME="Remy Ratatouille"
-
-#files included
-#game.py [python script for the rock, paper, scissors game]
+#Files included
+- README.md
+- requirements.txt
+- game.py
