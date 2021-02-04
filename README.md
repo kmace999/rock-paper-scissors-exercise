@@ -2,6 +2,7 @@
 Navigate to the rock-paper-scissors-exercise repository from your local Git Hub
 Desktop client in the command line [ex: Git Bash, Command Prompt, etc.]. The below code
 is an example, so make sure it reflects your depository's unique address.
+
 `cd ~/Documents/GitHub/rock-paper-scissors-exercise`
 
 ## Setting up the game environment
