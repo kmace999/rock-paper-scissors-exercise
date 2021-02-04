@@ -7,30 +7,44 @@ is an example, so make sure it reflects your depository's unique address.
 ## Setting up the game environment
 The first time you play this game (and only the first time), you need to create
 a new environment, and name it something like "my-game-env".
+
 `conda create -n my-game-env python=3.8`
+
 This code will also install Python 3.8 into this new environment.
 To navigate to this environment or return to it in the future, use the below code.
+
 `conda activate my-game-env`
+
 
 When activating the environment for the first time, you have to install the
 required packages listed in the requirements.txt file in the repository. (You only
 need to do this the first time you setup this environment.)
+
 `pip install -r requirements.txt`
+
 
 ##Playing Rock, Paper, Scissors
 To play the game, run the below code, and follow the in-game instructions. Have fun!
 `python game.py`
 
+
 ##Customizing your username
 Create a new file called ".env"
+
 `> .env`
+
+
 The required package for this game python-dotenv allows the user to
 enter a secret username that is displayed in the game but not visible when
 looking through the root depository.
 To change your username, open the new .env file in your text editor (example below),
+
 `atom .env`
+
 and enter your chosen username.
+
 `USER_NAME = "Remy Ratatouille"`
+
 
 #Files included
 - README.md
