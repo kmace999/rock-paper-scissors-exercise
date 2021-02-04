@@ -52,3 +52,4 @@ and enter your chosen username.
 - README.md
 - requirements.txt
 - game.py
+- gitignore
